@@ -4,7 +4,17 @@ using System.Text;
 
 namespace Agents
 {
-    class Agent
+    public abstract class Agent
     {
+
+        public string Name { get; }
+        public Agent(string name)
+        {
+            Name = name;
+        }
+
+        public abstract char Move();
+        
+
     }
 }
